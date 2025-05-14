@@ -525,17 +525,6 @@ a:focus {
     justify-content: center;
 }
 
-.feature .feature-icon::before {
-    position: absolute;
-    content: "";
-    width: 80px;
-    height: 80px;
-    top: -20px;
-    left: -10px;
-    border: 2px dotted #ffffff;
-    border-radius: 60px;
-    z-index: 1;
-}
 
 .feature .feature-icon::after {
     position: absolute;
@@ -553,7 +542,7 @@ a:focus {
     background: #fdbe33;
 }
 
-.feature .feature-icon [class^="flaticon-"]::before {
+.feature .feature-icon ::before {
     position: relative;
     margin: 0;
     color: #fdbe33;
@@ -573,18 +562,28 @@ a:focus {
     font-weight: 600;
 }
 
+.feature .feature-text h6 {
+    margin: 0 0 10px 0;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
 .feature .feature-text p {
     margin: 0;
-    color: #fdbe33;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 15px;
     font-weight: 400;
 }
 
-.feature .col-md-12:nth-child(2n) [class^="flaticon-"]::before,
-.feature .col-md-12:nth-child(2n) h3,
-.feature .col-md-12:nth-child(2n) p {
+.feature .col-md-12:nth-child(2n) ::before,
+.feature .col-md-12:nth-child(2n) h3{
     color: #030f27;
 }
+.feature .col-md-12:nth-child(2n) p{
+    color: #ffffff;
+}
+
 
 
 /*******************************/
