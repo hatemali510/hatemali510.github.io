@@ -12,7 +12,7 @@ use PHPMailer\PHPMailer\Exception;
 $mail = new PHPMailer(true);
 try {
 
-     $name = htmlspecialchars(trim($_POST["name"]));
+    $name = htmlspecialchars(trim($_POST["name"]));
     $email = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(trim($_POST["message"]));
     $subject = htmlspecialchars(trim($_POST["subject"]));
@@ -20,14 +20,14 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.gmail.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = 'hatemali716@gmail.com';        // your Gmail
-    $mail->Password   = 'rcrvkfrrddaaszds';     // 16-digit App Password
+    $mail->Username   = 'chehab2008@gmail.com';        // your Gmail
+    $mail->Password   = 'laodckdvrzweojxl';     // 16-digit App Password
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
 
     // Recipients
-    $mail->setFrom('hatemali716@gmail.com', 'G-Blast-email');
-    $mail->addAddress('hatemali716@gmail.com', $name);
+    $mail->setFrom('chehab2008@gmail.com', 'G-Blast-email');
+    $mail->addAddress('chehab2008@gmail.com', $name);
 
     // Content
     $mail->isHTML(true);
